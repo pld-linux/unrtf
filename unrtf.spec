@@ -1,5 +1,5 @@
 Summary:	UnRTF - converter from RTF to other formats
-Summary(pl.UTF-8):   UnRTF - konwerter z RTF do innych formatów
+Summary(pl.UTF-8):	UnRTF - konwerter z RTF do innych formatów
 Name:		unrtf
 Version:	0.19.7
 Release:	1
