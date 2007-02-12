@@ -1,5 +1,5 @@
 Summary:	UnRTF - converter from RTF to other formats
-Summary(pl):	UnRTF - konwerter z RTF do innych formatów
+Summary(pl.UTF-8):   UnRTF - konwerter z RTF do innych formatÃ³w
 Name:		unrtf
 Version:	0.19.7
 Release:	1
@@ -23,17 +23,17 @@ compress and both foreground and background colors. Images are always
 stored to separate files in the current directory, or they can be
 ignored.
 
-%description -l pl
+%description -l pl.UTF-8
 Program unrtf to konwerter z formatu RTF (Rich Text Format) do coraz
-wiêkszej liczby formatów dokumentów. Aktualnie obs³ugiwane s±
+wiÄ™kszej liczby formatÃ³w dokumentÃ³w. Aktualnie obsÅ‚ugiwane sÄ…
 HyperText Markup Language (HTML), czysty tekst, tekst z kodami VT100
-oraz LaTeX. Wszystkie formaty wyj¶ciowe z wyj±tkiem HTML-a s± w stanie
-"alpha", czyli ograniczone i ich obs³uga dopiero zaczê³a byæ tworzona.
-Jednak przy u¿yciu HTML-a program obs³uguje tabele, fonty, odno¶niki i
-wyrównania paragrafów. Obs³uga fontów obejmuje zmiany kroju i
-rozmiaru, a tak¿e typowe atrybuty, takie jak kursywa, pogrubienie,
-podkre¶lenie, przekre¶lenie i kolor t³a. Obrazki s± zapisywane w
-oddzielnych plikach w bie¿±cym katalogu, albo mog± byæ ignorowane.
+oraz LaTeX. Wszystkie formaty wyjÅ›ciowe z wyjÄ…tkiem HTML-a sÄ… w stanie
+"alpha", czyli ograniczone i ich obsÅ‚uga dopiero zaczÄ™Å‚a byÄ‡ tworzona.
+Jednak przy uÅ¼yciu HTML-a program obsÅ‚uguje tabele, fonty, odnoÅ›niki i
+wyrÃ³wnania paragrafÃ³w. ObsÅ‚uga fontÃ³w obejmuje zmiany kroju i
+rozmiaru, a takÅ¼e typowe atrybuty, takie jak kursywa, pogrubienie,
+podkreÅ›lenie, przekreÅ›lenie i kolor tÅ‚a. Obrazki sÄ… zapisywane w
+oddzielnych plikach w bieÅ¼Ä…cym katalogu, albo mogÄ… byÄ‡ ignorowane.
 
 %prep
 %setup -q
