@@ -1,12 +1,12 @@
 Summary:	UnRTF - converter from RTF to other formats
 Summary(pl.UTF-8):	UnRTF - konwerter z RTF do innych formatów
 Name:		unrtf
-Version:	0.19.7
+Version:	0.20.3
 Release:	1
 License:	GPL v2+
 Group:		Applications/Text
-Source0:	ftp://ftp.gnu.org/gnu/unrtf/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	1cddb206f3ff5451c8d7699acba26a77
+Source0:	ftp://ftp.gnu.org/gnu/unrtf/%{name}_%{version}.tar.gz
+# Source0-md5:	290280d23a0ee631125a705930345cdd
 URL:		http://www.gnu.org/software/unrtf/unrtf.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,24 +36,23 @@ podkreślenie, przekreślenie i kolor tła. Obrazki są zapisywane w
 oddzielnych plikach w bieżącym katalogu, albo mogą być ignorowane.
 
 %prep
-%setup -q
+%setup -q -n %{name}_%{version}
 
 %build
-%{__make} \
-	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -Wall"
+%configure
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -D unrtf $RPM_BUILD_ROOT%{_bindir}/unrtf
-install -D unrtf.1 $RPM_BUILD_ROOT%{_mandir}/man1/unrtf.1
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES README
+%doc AUTHORS NEWS PROBS README
 %attr(755,root,root) %{_bindir}/unrtf
 %{_mandir}/man1/unrtf.1*
