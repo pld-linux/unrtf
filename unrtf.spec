@@ -1,12 +1,12 @@
 Summary:	UnRTF - converter from RTF to other formats
 Summary(pl.UTF-8):	UnRTF - konwerter z RTF do innych formatów
 Name:		unrtf
-Version:	0.20.4
+Version:	0.20.5
 Release:	1
 License:	GPL v3+
 Group:		Applications/Text
-Source0:	ftp://ftp.gnu.org/gnu/unrtf/%{name}_%{version}.tar.gz
-# Source0-md5:	e037e8d3846120779ebd112b13ce8b60
+Source0:	ftp://ftp.gnu.org/gnu/unrtf/%{name}-%{version}.tar.gz
+# Source0-md5:	6a972d275bee7ca812458561a436095b
 URL:		http://www.gnu.org/software/unrtf/unrtf.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,7 +36,7 @@ podkreślenie, przekreślenie i kolor tła. Obrazki są zapisywane w
 oddzielnych plikach w bieżącym katalogu, albo mogą być ignorowane.
 
 %prep
-%setup -q -n %{name}_%{version}
+%setup -q
 
 %build
 %configure
@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS NEWS PROBS README
+%doc AUTHORS NEWS README
 %attr(755,root,root) %{_bindir}/unrtf
 %{_mandir}/man1/unrtf.1*
