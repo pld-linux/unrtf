@@ -5,7 +5,7 @@ Version:	0.20.5
 Release:	1
 License:	GPL v3+
 Group:		Applications/Text
-Source0:	ftp://ftp.gnu.org/gnu/unrtf/%{name}-%{version}.tar.gz
+Source0:	http://ftp.gnu.org/gnu/unrtf/%{name}-%{version}.tar.gz
 # Source0-md5:	6a972d275bee7ca812458561a436095b
 URL:		http://www.gnu.org/software/unrtf/unrtf.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
