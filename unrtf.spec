@@ -1,12 +1,12 @@
 Summary:	UnRTF - converter from RTF to other formats
 Summary(pl.UTF-8):	UnRTF - konwerter z RTF do innych formatów
 Name:		unrtf
-Version:	0.21.1
+Version:	0.21.2
 Release:	1
 License:	GPL v3+
 Group:		Applications/Text
 Source0:	http://ftp.gnu.org/gnu/unrtf/%{name}-%{version}.tar.gz
-# Source0-md5:	ce069646837d0a2c15b439a5529afde8
+# Source0-md5:	e0b38d8786f00704ec479a7d261808b8
 URL:		http://www.gnu.org/software/unrtf/unrtf.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
