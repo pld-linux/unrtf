@@ -8,6 +8,8 @@ Group:		Applications/Text
 Source0:	http://ftp.gnu.org/gnu/unrtf/%{name}-%{version}.tar.gz
 # Source0-md5:	e2724018429d7710f2c72771705f6b37
 URL:		http://www.gnu.org/software/unrtf/unrtf.html
+BuildRequires:	autoconf >= 2.53
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
