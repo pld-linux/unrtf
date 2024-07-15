@@ -5,7 +5,7 @@ Version:	0.21.10
 Release:	1
 License:	GPL v3+
 Group:		Applications/Text
-Source0:	http://ftp.gnu.org/gnu/unrtf/%{name}-%{version}.tar.gz
+Source0:	https://ftp.gnu.org/gnu/unrtf/%{name}-%{version}.tar.gz
 # Source0-md5:	cbd1ae563240e383d0773bb049887d3f
 URL:		http://www.gnu.org/software/unrtf/unrtf.html
 BuildRequires:	autoconf >= 2.59
